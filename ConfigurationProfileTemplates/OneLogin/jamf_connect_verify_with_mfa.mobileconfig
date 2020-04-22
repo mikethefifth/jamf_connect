@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+ <dict>
+  <key>OIDCProvider</key>
+    <string>OneLogin</string>
+  <key>OIDCROPGID</key>
+    <string>09DD102E-94F9-44B1-B8BE-261B48B2306F</string>
+  <key>OIDCRedirectURI</key>
+    <string>https://127.0.0.1/jamfconnect</string>
+  <key>ROPGSuccessCodes</key>
+    <array>
+        <string>MFA</string>
+    </array>
+ </dict>
+</plist>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>AuthUIOIDCClientID</key>
+                <string>b53e4a8c-d439-4372-a5aa-29361f197088</string>
+                <key>AuthUIOIDCDiscoveryURL</key>
+                <string>https://provider.jamfconnect.com/65784983-b7ae-4325-99af-e23d71848bb1/v2.0/.well-known/openid-configuration</string>
+                <key>AuthUIOIDCProvider</key>
+                <string>Custom</string>
+                <key>AuthUIOIDCRedirectURI</key>
+                <string>https://127.0.0.1/jamfconnect</string>
+                <key>AuthUIOIDCTenant</key>
+                <string>31e715c3-5b52-45ba-9a88-560fcdcb012e</string>
+                <key>PayloadDescription</key>
+                <string>Enables sudo access for specific users</string>
+                <key>PayloadDisplayName</key>
+                <string>Jamf Connect - PAM Access</string>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>PayloadIdentifier</key>
+                <string>com.jamf.connect.login.35a366af-da3f-4639-b495-e3a731483681</string>
+                <key>PayloadOrganization</key>
+                <string>Jamf Connect</string>
+                <key>PayloadType</key>
+                <string>com.jamf.connect.login</string>
+                <key>PayloadUUID</key>
+                <string>c3c907f5-4df3-48c2-8680-1818875b60ca</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadDescription</key>
+        <string>Enables sudo access for specific users</string>
+        <key>PayloadDisplayName</key>
+        <string>Jamf Connect - PAM Access</string>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadIdentifier</key>
+        <string>com.jamf.connect.login.502D013A-F453-4461-873E-A4CAD270A239</string>
+        <key>PayloadOrganization</key>
+        <string>Jamf Connect</string>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>EBF1CDEF-D4B3-4570-BE51-39694925CB6C</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>

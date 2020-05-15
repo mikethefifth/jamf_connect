@@ -11,7 +11,7 @@
         <key>PayloadOrganization</key>
         <string>Jamf</string>
         <key>PayloadUUID</key>
-        <string>27870006-41CB-4694-A6AD-709073670851</string>
+        <string>0B374E22-78F4-4B9A-B171-2BCE490B2B51</string>
         <key>PayloadEnabled</key>
         <true/>
         <key>PayloadScope</key>
@@ -34,7 +34,7 @@
                 <key>PayloadOrganization</key>
                 <string>Jamf</string>
                 <key>PayloadUUID</key>
-                <string>98B42AF5-4040-47D1-9F6F-A0E1D7FBFC26</string>
+                <string>66E274B9-FC0A-4EE2-B0A6-90BB72B41FD4</string>
                 <key>PayloadVersion</key>
                 <integer>1</integer>
                 <key>PayloadIdentifier</key>

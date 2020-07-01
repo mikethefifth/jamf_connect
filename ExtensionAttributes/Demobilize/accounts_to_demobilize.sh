@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 ## Builds a list of remaining mobile accounts on the Mac.
 ## Used as a Jamf Pro extension attribute to determine if Demobilize has completed.

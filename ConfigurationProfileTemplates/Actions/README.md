@@ -24,8 +24,8 @@ Within the `com.jamf.connect.actions` there are a few global pref keys that can 
 An action is comprised of some meta data and then four phases. Each phase has a collection of Commands in them. These Commands have the Command itself and then a CommandOptions that can modify the command. Commands can execute external scripts or use the built in functions included with Actions. The only required part of the Action is the name of the action, all the other parts are optional. To break out a sample Action
 
 | Attribute | Definition | Type | Required |
-|-------|---|------------|------|----------|
-| Name | Plaintext name of the Action. The displayed menu item name can be overridden by the result of `Title`, if configured.  | String | yes |
+|-----------|------------|------|----------|
+| Name | Plaintext name of the Action. The displayed menu item name can be overridden by the result of `Title`, if configured. | String | yes |
 | Title | Command Set that determines the name of the menu item | Dictionary | no |
 | Show | Command Set that determine if the item should be shown in the menu | Array | no |
 | Action | Command Set that make up the actual Action itself | Array | no

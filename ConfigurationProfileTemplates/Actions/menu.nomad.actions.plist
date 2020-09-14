@@ -4,10 +4,18 @@
 <dict>
 	<key>Version</key>
 	<integer>1</integer>
-	<key>MenuIcon</key>
-	<true/>
+    <key>MenuIcon</key>
+	</true>
+	<key>MenuText></key>
+    </true>
 	<key>Actions</key>
 	<array>
+		<dict>
+            <key>Name</key>
+            <string>Connect to VPN</string>
+            <key>ToolTip</key>
+            <string>Jamf VPN - Global</string>
+        </dict>
 		<dict>
 			<key>Name</key>
 			<string>update test</string>

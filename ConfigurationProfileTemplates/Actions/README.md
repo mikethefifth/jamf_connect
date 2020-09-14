@@ -1,10 +1,6 @@
-#  Jamf Connect Actions Read Me
+#  Jamf Connect Actions Menu Read Me
 
-This file lays out the design goals of the Actions Menu that you can add into Jamf Connect and how to use it.
-
-## Philosophy
-
-The Actions Menu is composed of "actions" which are defined by preferences in the "com.jamf.connect.actions" domain. In this domain Actions are listed as an array of dictionaries with each dictionary comprising one action. Connect Actions are simultaneously attempting to be highly configurable without being overly complicated, as such most things are optional.
+The Actions Menu is single menu item within Jamf Connect’s menu bar application that administrators can customize for their needs. The Actions Menu is composed of "actions" which are defined by preferences in the "com.jamf.connect.actions" domain. In this domain Actions are listed as an array of dictionaries with each dictionary comprising one action. Each dictionary is used to determine the visual state of the menu item - name, style, color, order.
 
 The Actions Menu is aware of updates to the preference file and does not require Connect to be re-launched in order to load the new actions. When the preferences are changed, Connect rebuilds the entire menu from scratch and runs all tests and other housekeeping items.
 
@@ -29,7 +25,7 @@ An action is comprised of some meta data and then four phases. Each phase has a 
 
 | Attribute | Definition | Type | Required |
 |---|---|---|---|---|
-| Name | Plaintext name of the Action. Will be used for the menu name if a Title isn't given | String | yes |
+| Name | Plaintext name of the Action. The displayed menu item name can be overridden by the result of `Title`, if configured.  | String | yes |
 | Title | Command Set that determines the name of the menu item | Dictionary | no |
 | Show | Command Set that determine if the item should be shown in the menu | Array | no |
 | Action | Command Set that make up the actual Action itself | Array | no
@@ -37,7 +33,9 @@ An action is comprised of some meta data and then four phases. Each phase has a 
 | GUID | Unique ID for the Action | String | no |
 | Connected | If the action set should only be run when connected to the AD domain | Bool | no |
 | Timer | Length in minutes between firing the Action | Integer | no |
-| ToolTip | The text to be shown when hovering over the menu item | String | no |
+| ToolTip | Text that is visible when the cursor hovers over the menu item | String | no |
+||
+
 
 * Note that the Title Command set can only have one command
 * If the Title command returns "false" or "true" the text of the title won't be updated. Instead a red, in the case of "false", or green dot will be next to the menu item and the title will be the Name of the action set. If the Title command returns "yellow", a yellow dot will be shown next to the item.
@@ -61,6 +59,7 @@ Each command has a CommandOptions value that determines what the command does. A
 | notify | Display a notification in the notification center | Text of the notification |
 | false | A command that always returns false | Anything |
 | true | A command that always returns true | Anything |
+||
 
 * The result of any command can be passed on to the next one. Using `<<result>>` in your command options will cause it to be replaced with the result of the previous command. Note that "true" or "false" results will not be conveyed to the next command.
 * When using the "alert" and "notify" commands, if the command options are blank or are either "true" or "false", no alert or notification will be displayed. You can use this to only show errors.

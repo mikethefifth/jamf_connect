@@ -11,7 +11,7 @@ Actions are run lazilly in the background, so don't expect immediate satisfactio
 Within the `com.jamf.connect.actions` there are a few global pref keys that can determine the behavior of the menu.
 
 | Attribute | Definition | Type | Required |
-|---|---|---|---|---|
+|-----------|------------|------|----------|
 | Version | The numeric version of the preference file. Currently only "1" is suppored | Integer | yes |
 | MenuIcon | Determines if the Actions menu itself will have a red/yellow/green light next to it. | Bool | no |
 | MenuText| Determines if the text of the main Action menu be the result of a command | Bool | no |
@@ -24,7 +24,7 @@ Within the `com.jamf.connect.actions` there are a few global pref keys that can 
 An action is comprised of some meta data and then four phases. Each phase has a collection of Commands in them. These Commands have the Command itself and then a CommandOptions that can modify the command. Commands can execute external scripts or use the built in functions included with Actions. The only required part of the Action is the name of the action, all the other parts are optional. To break out a sample Action
 
 | Attribute | Definition | Type | Required |
-|---|---|---|---|---|
+|-------|---|------------|------|----------|
 | Name | Plaintext name of the Action. The displayed menu item name can be overridden by the result of `Title`, if configured.  | String | yes |
 | Title | Command Set that determines the name of the menu item | Dictionary | no |
 | Show | Command Set that determine if the item should be shown in the menu | Array | no |
@@ -34,7 +34,6 @@ An action is comprised of some meta data and then four phases. Each phase has a 
 | Connected | If the action set should only be run when connected to the AD domain | Bool | no |
 | Timer | Length in minutes between firing the Action | Integer | no |
 | ToolTip | Text that is visible when the cursor hovers over the menu item | String | no |
-||
 
 
 * Note that the Title Command set can only have one command
@@ -49,7 +48,7 @@ Jamf Connect has a number of built-in commands to make things easy, however, sin
 Each command has a CommandOptions value that determines what the command does. All options are strings. All commands can return results. A result of "false" is used by the Show action to prevent the menu item from being shown.
 
 | Command | Function | Options |
-|---|---|---|
+|---------|----------|---------|
 | path | Excute a binary at a specific file path | The path to execute |
 | app | Launch an app at a specific file path | The path to the application |
 | url | Launch a URL in the user's default browser | The URL to launch |
@@ -59,7 +58,6 @@ Each command has a CommandOptions value that determines what the command does. A
 | notify | Display a notification in the notification center | Text of the notification |
 | false | A command that always returns false | Anything |
 | true | A command that always returns true | Anything |
-||
 
 * The result of any command can be passed on to the next one. Using `<<result>>` in your command options will cause it to be replaced with the result of the previous command. Note that "true" or "false" results will not be conveyed to the next command.
 * When using the "alert" and "notify" commands, if the command options are blank or are either "true" or "false", no alert or notification will be displayed. You can use this to only show errors.

@@ -52,7 +52,7 @@
         <key>PayloadIdentifier</key>
         <string>com.jamf.connect.AC701B81-3D30-4B15-A813-09D24A92E8DA</string>
         <key>PayloadOrganization</key>
-        <string>JNUC 2020</string>
+        <string>Jamf Connect</string>
         <key>PayloadUUID</key>
         <string>AC701B81-3D30-4B15-A813-09D24A92E8DA</string>
     </dict>

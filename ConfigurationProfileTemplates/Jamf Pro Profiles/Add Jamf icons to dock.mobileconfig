@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+    <dict>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadDisplayName</key>
+        <string>Add Jamf icons to dock</string>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>E47E3821-E357-4E4B-8B71-E1970001D134</string>
+                <key>PayloadDisplayName</key>
+                <string>Dock</string>
+                <key>PayloadType</key>
+                <string>com.apple.dock</string>
+                <key>static-apps</key>
+                <array>
+                    <dict>
+                        <key>tile-type</key>
+                        <string>file-tile</string>
+                        <key>tile-data</key>
+                        <dict>
+                            <key>file-type</key>
+                            <integer>1</integer>
+                            <key>label</key>
+                            <string>Jamf Connect</string>
+                            <key>file-label</key>
+                            <string>Jamf Connect</string>
+                            <key>file-data</key>
+                            <dict>
+                                <key>_CFURLStringType</key>
+                                <integer>0</integer>
+                                <key>_CFURLString</key>
+                                <string>/Applications/Jamf Connect.app</string>
+                            </dict>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>tile-type</key>
+                        <string>file-tile</string>
+                        <key>tile-data</key>
+                        <dict>
+                            <key>file-type</key>
+                            <integer>1</integer>
+                            <key>label</key>
+                            <string>Jamf Connect Configuration</string>
+                            <key>file-label</key>
+                            <string>Jamf Connect Configuration</string>
+                            <key>file-data</key>
+                            <dict>
+                                <key>_CFURLStringType</key>
+                                <integer>0</integer>
+                                <key>_CFURLString</key>
+                                <string>/Applications/Jamf Connect Configuration.app</string>
+                            </dict>
+                        </dict>
+                    </dict>
+                </array>
+                <key>PayloadIdentifier</key>
+                <string>com.github.erikberglund.ProfileCreator.90800C25-20C2-4152-812F-DCAC6FDFDCEF.com.apple.dock.E47E3821-E357-4E4B-8B71-E1970001D134</string>
+                <key>PayloadOrganization</key>
+                <string></string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+            </dict>
+        </array>
+        <key>PayloadIdentifier</key>
+        <string>com.github.erikberglund.ProfileCreator.90800C25-20C2-4152-812F-DCAC6FDFDCEF</string>
+        <key>PayloadOrganization</key>
+        <string>JNUC 2020</string>
+        <key>PayloadUUID</key>
+        <string>90800C25-20C2-4152-812F-DCAC6FDFDCEF</string>
+    </dict>
+</plist>
